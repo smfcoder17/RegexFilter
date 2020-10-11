@@ -68,7 +68,7 @@ class RegexFilter
      * @param string $string the string to match against.
      * @return array|bool list of matches if any found or false if none.
      */
-    public function getMatches($string)
+    public function getMatches($string) 
     {
         $matches = [];
         foreach ($this->filters as $filter) {
