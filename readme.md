@@ -6,12 +6,12 @@ Php class that helps you validate a string against multiple filters using regula
 class RegexFilter
 {
     // Predefined regular expressions
-    public const FILTER_URL
-    public const FILTER_HTML_TAGS
-    public const FILTER_HTML_LINKS
-    public const FILTER_PHONE_NUMBER
-    public const FILTER_EMAIL_ADDRESS
-    public const FILTER_IP4_ADDRESS
+    public const FILTER_URL;
+    public const FILTER_HTML_TAGS;
+    public const FILTER_HTML_LINKS;
+    public const FILTER_PHONE_NUMBER;
+    public const FILTER_EMAIL_ADDRESS;
+    public const FILTER_IP_ADDRESS;
 
     public function addFilters(array $filters) : void {...}
     public function addExpressions($caseSensitive, $expressions) : void {...}
@@ -22,10 +22,10 @@ class RegexFilter
 
 ```
 
-## Usage
+## Usage Example
 ```php
 <?php
- include('lib/RegexFilter');
+ include('lib/RegexFilter.php');
  
  $spamFilter = new RegexFilter();
  
